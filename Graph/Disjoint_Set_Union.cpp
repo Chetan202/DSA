@@ -61,9 +61,11 @@ void init_code() {
 const int N = 1e5 + 10;
 int parent[N];
 int rankk[N];
-
+int size[N];
 void makeSet(int v) {
 	parent[v] = v;
+	//size[v] = 1;
+	//rank[v] = 0;
 }
 
 int findPar(int node) {
